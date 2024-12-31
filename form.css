@@ -1,0 +1,96 @@
+/* 
+   This is my CSS for styling the multi-step form structure and ensuring 
+   it's centered, visually appealing, and consistent. 
+*/
+
+/* The container that wraps my entire form */
+.form-container {
+  /* Light gray background for contrast */
+  background: #f7f7f7; 
+  /* Internal spacing within the container */
+  padding: 20px; 
+  /* Slightly rounded corners for a more modern look */
+  border-radius: 8px; 
+  /* Fixed width so it doesn't stretch too wide */
+  width: 600px; 
+  /* Allow height to automatically adjust 
+     (the !important ensures it overrides any inline or other settings) */
+  height: auto !important;
+}
+
+/* The main area that centers the form vertically and horizontally */
+.main {
+  /* Allows the main section to grow and fill available space */
+  flex: 1; 
+  /* Use Flexbox to center content horizontally */
+  display: flex; 
+  /* Ensure it’s horizontally centered */
+  justify-content: center !important; 
+  /* Ensure it’s vertically centered as well */
+  align-items: center !important; 
+  /* Padding around the main area for breathing room */
+  padding: 20px; 
+}
+
+/* Each grouping of label + input is spaced out neatly */
+.form-group {
+  /* Space below each group for separation */
+  margin-bottom: 15px; 
+}
+
+/* Labels go above inputs with some spacing */
+label {
+  /* Make sure labels are on their own line */
+  display: block; 
+  /* Small gap below the label text */
+  margin-bottom: 5px; 
+  /* Slightly bolder text so labels stand out */
+  font-weight: 600; 
+}
+
+/* The text fields where the user enters data */
+input {
+  /* Fill full width of the container */
+  width: 100%; 
+  /* Internal padding for a more comfortable input area */
+  padding: 8px; 
+  /* Simple border around the input */
+  border: 1px solid #ccc; 
+  /* Rounded corners for a consistent style */
+  border-radius: 4px; 
+}
+
+/* The styling for Next/Submit buttons */
+button {
+  /* Full width to match the input fields */
+  width: 100%; 
+  /* Spacing inside the button */
+  padding: 10px; 
+  /* Remove default borders, so the color stands out */
+  border: none; 
+  /* Rounded corners to match inputs */
+  border-radius: 4px; 
+  /* White text on the button */
+  color: #fff; 
+  /* Bright red background (accent color) */
+  background-color: red; 
+  /* Font size for readable text */
+  font-size: 16px; 
+  /* Cursor changes to pointer on hover */
+  cursor: pointer; 
+}
+
+/* Slightly darker red background when hovering over the button */
+button:hover {
+  background-color: #b30000;
+}
+
+/* By default, hide all steps */
+.step {
+  display: none; 
+}
+
+/* Only display the active step */
+.step.active {
+  display: block; 
+}
